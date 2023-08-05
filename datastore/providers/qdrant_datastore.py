@@ -33,7 +33,8 @@ class QdrantDataStore(DataStore):
     def __init__(
         self,
         collection_name: Optional[str] = None,
-        vector_size: int = 1536,
+        #vector_size: int = 1536,
+        vector_size: int = 1024,
         distance: str = "Cosine",
         recreate_collection: bool = False,
     ):
